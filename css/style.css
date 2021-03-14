@@ -1,0 +1,527 @@
+/* Общие настройки */
+* {
+box-sizing: border-box;
+margin: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Главный контейнер */
+.container {
+max-width: 1200px;
+width: 100%;
+margin: auto;
+}
+/* Навигация */
+.navigation {
+margin-top: 61px;
+}
+
+.navigation--link {
+    text-decoration: none;
+    color: #000;
+    padding-right: 45px;
+}
+/* Логотип */
+.header__info {
+    display: flex;
+    justify-content:space-between;
+}
+.logo--header {
+    margin-top: 50px;
+}
+
+.logo--header--text {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo--footer--text {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo--img {
+    padding-right: 20px;
+    margin-bottom: -10px;
+}
+
+/* Корзина */
+.basket {
+    margin-top: 50px;
+}
+/* Фон секций */
+.section__header {
+    background-color: #F9F6F1;
+}
+
+.section__promo {
+    background-color: #F9F6F1;
+}
+
+.section__offer {
+    background-color:#212121;
+}
+.section__collection {
+    background-color:#F9F6F1;
+}
+.section__discounts {
+    background-color:#212121;
+}
+.section__footer {
+    background-color: #212121;
+}
+/* Промо */
+.promo {
+padding-top: 140px;
+padding-bottom: 200px;
+display: flex;
+}
+/* Контейнеры промо */
+.sale__offer {
+    flex-basis: 50%;
+}
+
+.sneakers__sale__offer {
+    flex-basis: 50%;
+}
+/* Специальное предложение */
+.winter__sale{
+    font-weight: normal;
+    font-size: 30px;
+}
+.winter__sale--discount {
+    font-size: 55px;
+    padding-top: 15px;
+    text-transform:uppercase ;
+}
+.watch__models {
+    text-transform: uppercase;
+    color: white;
+    border:0px;
+    background-color:#D7B399;
+    margin-top: 25px;
+    padding:15px 25px 15px 25px ;
+}
+
+/* Кросовки со скидкой */
+.sale__promo--one {
+text-decoration-line: line-through;
+font-size: 42px;
+text-align: right;
+}
+
+
+.sale__prome--two {
+color:#D84033;
+font-size:62px;
+text-align: right;
+padding-top: 10px;
+}
+
+.img__shoes {
+    margin-top: -200px;
+}
+/* Блок с специальным предложением */
+.special__offer {
+text-align: center;
+padding-top: 80px;
+padding-bottom: 61px;
+}
+
+.special__offer__text--one {
+color: #FFFFFF;
+font-size: 30px;
+text-transform: uppercase;
+font-weight: normal;
+padding-bottom: 21px;
+}
+
+.special__offer__text--two {
+color: #FFFFFF;
+font-size: 21px;
+font-weight: normal;
+}
+
+.text--one--fatty {
+    font-weight: bold;
+}
+
+/* Сделано относительно неправильно ↓ */
+/* Блок с коллекциями */
+.collection__block {
+    display: flex;
+}
+.mens__collection {
+    background:url(../img/man.png) no-repeat right;
+    padding-right:250px;
+    padding-top: 70px;
+    padding-left: 35px;
+}
+
+.mens__collection__text {
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+.womens__collection {
+    background: url(../img/girl.png) no-repeat right;
+    padding-right:250px;
+    padding-top: 70px;
+    padding-left: 35px;
+    background-color:#F4F4F4;
+}
+
+.womens__collection__text {
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+.list_of_goods {
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+/* Сделано неправильно ↓ */
+/* Кнопка со стрелкой */ 
+.right_arrow {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border:0px;
+    background-color:#D7B399;
+    color: white;
+    padding: 10px 30px 10px 30px ;
+}
+
+/* Майки */
+.undershirt__block{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.undershirt__text {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-left: 30px;
+    padding-top: 186px;
+    font-size: 21px;
+}
+.undershirt__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Новые модели кортинки и рамки */
+/* Отступы */
+.new__models__section{
+    padding-top: 150px;
+}
+.new__models__cards {
+    margin-top: 103px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.new__models__button {
+    margin-top: 100px;
+}
+/* Бордер */
+.border{
+    width: 25px;
+    height: 25px;
+    border:3px solid #D7B399;
+}
+.borders__block {
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+}
+/* Картинки */
+.card{
+    max-width: 255px;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color:#000;
+    align-content: space-between;
+    justify-content: space-between;
+}
+/* Лист картинок */
+.cards__list {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+    padding-top: 25px;
+    margin: auto;
+}
+/* Цена */
+.price__tag{
+    color:#D7B399;
+    margin-left: 71px;
+}
+/* Название секции */
+.section__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 103px;
+}
+/* Текст */
+.desc{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    max-width: 112px;
+    text-align: center ;
+    margin-left: 51px;
+}
+/* Квадратики */
+.btnone{
+    border-top: none;
+}
+.brnone{
+    border-right: none;
+}
+.bbnone{
+    border-bottom: none;
+}
+.blnone{
+    border-left: none;
+}
+/* Кнопка */
+.button__block {
+text-align: center;
+padding-top: 103px;
+padding-bottom: 150px;
+}
+
+.button__primary{
+    width: 220px;
+    height: 55px;
+    font-size: 16px;
+    background:#D7B399 url(../img/Arrow.svg) no-repeat center right 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.button {
+    outline: none;
+    border-style: solid none;
+    cursor: pointer;
+}
+
+/* Скидки и подарки */
+.discounts__bock {
+    display:flex;
+    justify-content: center;
+    padding-top: 71px;
+    padding-bottom: 70px;
+}
+
+.mail {
+    padding-left: 60px;
+    padding-right: 35px;
+}
+
+.email {
+    width: 255px;
+    height: 40px;
+}
+
+.subscribe {
+    border:0px;
+    background-color:#D7B399;
+    color: white;
+    padding:10px 25px 10px 25px;
+}
+
+.sales__and__gift {
+color: white;
+
+}
+/* Подвал */
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+}
+/* Логотип и теск в подвале */
+
+
+.logo--text--footer {
+    padding-top: 30px;
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 200px;
+    height: 88px;
+    line-height: 22px;
+
+}
+/* Блок с сслками */
+
+
+.link__the__list {
+    list-style-type: none;
+    padding: 5px;
+    
+   }
+
+.link__list{
+    margin-left: 0;
+    padding-left: 0;
+   }
+
+.list__links--text {
+    text-decoration: none;
+    font-size: 14px;
+    color: #CBCFD4;
+}
+
+.title__of__link__lists {
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.footer__info__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+    font-size: 14px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color:#000;
+}
+/* Адаптация */
+@media (max-width:1200px) {
+    .logo--header{
+        display: none;
+    }
+    .header__info {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .promo {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .undershirt__block {
+        justify-content: center;
+    }
+    .new__models__cards {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__block {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .logo--footer {
+        display: none;
+    }
+    .footer__info__block {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width:960px) {
+    .collection__block {
+        flex-wrap: wrap;
+    }
+    .header__info {
+        justify-content: space-around;
+    }
+    .navigation {
+        display: none;
+    }
+    .logo--header {
+        display: flex;
+    }
+    .promo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sneakers__sale__offer {
+        display: none;
+    }
+    .sale__offer {
+        text-align: center;
+    }
+    .winter__sale--discount {
+        font-size: 34px;
+    }
+    .discounts__bock {
+        flex-wrap: wrap;
+        text-align: center  ;
+    }
+    .footer__info__block {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media (max-width:768px) {
+    .key__links {
+        display: none;
+    }
+    .footer__block {
+        justify-content: center;
+    }
+    .logo--footer {
+        display: block;
+    }
+    .footer__info__block {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media (max-width:576px) {
+    .mens__collection {
+        background-image: none;
+        padding: none;
+        padding-right: 0px;
+    }
+    .womens__collection {
+        background-image: none;
+        padding-right: 0px;
+    }
+    .mail {
+        padding:0px;
+    }
+    .email {
+        width: auto;    
+    }
+    .header__info {
+        display: grid;
+        text-align: center;
+    }
+    .sales__and__gift {
+        font-size: initial;
+    }
+    .footer__info__block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
